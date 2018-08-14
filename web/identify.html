@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>验证码</title>
+    <style type="text/css">
+        #identfy{
+            border: 1px solid deepskyblue;
+            background-color: blanchedalmond;
+            width:200px;
+            height:100px;
+            padding-left: 50px;
+            padding-top: 20px;
+        }
+
+    </style>
+    <script type="text/javascript">
+        function identifyload(){
+            document.getElementById("myyzm").src="";
+            //if(ident==result){
+                //alert("验证成功");
+               // window.document.login.action="login.html";
+               // window.document.login.submit();
+           // }else{
+                //alert("验证失败");
+           // }
+        }
+    </script>
+</head>
+<body>
+<div id="identify">
+    <h3>请输入验证码:</h3>
+    <img src="./yzm01" height="32" id="myyzm">
+    <input type="button" value="看不清,再来一张" onclick="identifyload()"/>
+    <input name="yzm01" id="inputyzm" onclick="identifycheck()"><br/><br/>
+
+</div>
+</body>
+</html>

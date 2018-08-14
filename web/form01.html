@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>form01</title>
+</head>
+<body>
+<form action="./helloservlet" method="Get" name="form01">
+    用户名：<input type="text" name="username" placeholder="请输入用户名"/><br/>
+    密码：<input type="password" name="password" placeholder="请输入用户名"/>
+    省份:
+    <select name="sheng" id="sheng" onchange="dochange()" >
+        <option value="">请选择省份</option>
+        <option value="陕西">陕西</option>
+        <option value="江苏">江苏</option>
+        <option value="云南">云南</option>
+    </select>
+    <button type="submit">提交</button>
+
+</form>
+</body>
+</html>

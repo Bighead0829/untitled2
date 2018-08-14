@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>好汉排行榜</title>
+    <style>
+        tr{
+            width:100px;
+            height:50px;
+            text-align:center;
+        }
+    </style>
+</head>
+<body>
+<table id="herotable" border="1px" cellpadding="0" cellspacing="0" width="600px" height="150px">
+    <tr>
+        <th> 排名</th>
+        <th> 姓名</th>
+        <th>操作</th>
+    </tr>
+    <tr>
+        <td>1</td>
+        <td>宋江</td>
+        <td><span>删除</span><span>修改</span></td>
+    </tr>
+    <tr>
+        <td>2</td>
+        <td>李逵</td>
+        <td><span>删除</span><span>修改</span></td>
+    </tr>
+</table>
+<form id="form" name="form" action="" method="post">
+    <p >排名<input type="text" name="number" id="number" ></p>
+    <p >姓名<input type="text" name="name" id="name" ></p>
+    <button type="button" id="add">添加好汉</button>
+    <button type="button" id="edit">修改好汉</button>
+</form>
+</body>
+</html>

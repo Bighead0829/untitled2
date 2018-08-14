@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>login</title>
+    <style type="text/css">
+        #login{
+            border: 1px solid deepskyblue;
+            background-color: blanchedalmond;
+            width:400px;
+            height:250px;
+            padding-left: 100px;
+            padding-top: 50px;
+        }
+
+    </style>
+    <script type="text/javascript">
+        //用javaScript语言验证昵称和密码
+        //function check(){
+            //var name=document.getElementById("nicheng").value;
+           // var password=document.getElementById("mima").value;
+           // if(name=="Bighead"&&password=="4214963"){
+               // alert("登陆成功");
+               // window.document.login.action="form01.html";
+               // window.document.login.submit();
+           // }else{
+              //  alert("密码或昵称错误,请重新输入");
+           // }
+       // }
+       function identifyload() {
+            document.getElementById('myyzm').src = 'yzm01';
+       }
+    </script>
+</head>
+<body>
+<div id="top">
+    <h1>登录</h1>
+</div>
+<div  id="login">
+    <form action="./ident" method="Post" name="login">
+        昵称:<input name="username" type="text" placeholder="请输入昵称" id="nicheng"/><br/><br/>
+        密码:<input name="password" type="password" placeholder="请输入密码" id="mima"/><br/><br/>
+        请输入验证码:<br/>
+        <img src="./yzm01" height="32" id="myyzm">
+        <button type="button" value="看不清楚,再来一张" onclick="identifyload()">看不清楚,再来一张</button>
+        <input name="yzm01" type="text"/><br/>
+        <button type="submit" value="登录" >登录</button>
+        <button type="reset" value="重置">重置</button>
+    </form>
+</div>
+</body>
+</html>
